@@ -2,11 +2,11 @@
 function display_usage {
     echo "Usage: $0 [OPTIONS]"
     echo "Options:"
-    echo "  -c, --create     Create a new user account."
-    echo "  -d, --delete     Delete an existing user account."
-    echo "  -r, --reset      Reset password for an existing user account."
-    echo "  -l, --list       List all user accounts on the system."
-    echo "  -h, --help       Display this help and exit."
+    echo "  -c"
+    echo "  -d"
+    echo "  -r"
+    echo "  -l"
+    echo "  -h"
 }
 
 function user_create {
@@ -51,19 +51,19 @@ function user_list {
 
 # Handle command line arguments
 case "$1" in
-    -c|--create)
+    -c)
         user_create
         ;;
-    -d|--delete)
+    -d)
         user_delete
         ;;
-    -r|--reset)
+    -r)
         user_reset
         ;;
-    -l|--list)
+    -l)
         user_list
         ;;
-    -h|--help)
+    -h)
         display_usage
         ;;
     *)
