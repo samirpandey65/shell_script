@@ -1,12 +1,10 @@
 #!/bin/bash
 function display_usage {
-    echo "Usage: $0 [OPTIONS]"
-    echo "Options:"
-    echo "  -c"
-    echo "  -d"
-    echo "  -r"
-    echo "  -l"
-    echo "  -h"
+    echo "  -c  create user"
+    echo "  -d  delete user"
+    echo "  -r  reset user password"
+    echo "  -l  list user list"
+    echo "  -h  help"
 }
 
 function user_create {
