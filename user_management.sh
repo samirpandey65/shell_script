@@ -47,7 +47,6 @@ function user_list {
     cat /etc/passwd | awk -F: '{print $1, "(UID: "$3")"}'
 }
 
-# Handle command line arguments
 case "$1" in
     -c)
         user_create
