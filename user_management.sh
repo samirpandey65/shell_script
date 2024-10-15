@@ -65,7 +65,7 @@ case "$1" in
         display_usage
         ;;
     *)
-        echo "Invalid option: $1"
+	    echo "Invalid option: ($1) please select option from below:"
         display_usage
         ;;
 esac
